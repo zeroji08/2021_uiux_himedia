@@ -44,7 +44,7 @@
 #header .topMenuWrap .topBar .menuR ul li{ 
     float:left; 
     height:40px;
-    padding-left:10px; 
+    padding-left:15px; 
     display:flex; justify-content:center; align-items:center;
     color:#fff; font-size:12px;  
 }
