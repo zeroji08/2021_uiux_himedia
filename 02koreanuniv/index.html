@@ -11,24 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
     
+    <script>
+        $(document).ready(function(){
+            $(".slider1").bxSlider()
+            $(".slider2").bxSlider()
+        })
+    </script>
 </head>
 <body>
-    <header id="header">
-        <div class="topMenuWrap">
-            <div class="topBar">
-                <div class="menuL">    <!--  메뉴 왼쪽 -->
-                    <ul class="clearfix">
-                        <li><a href="#">대학교</a></li>
+    <header id="header">               <!--  L+R+menu -->
+        <div class="topMenuWrap">       <!-- L+R -->
+            <div class="topBar clearfix">
+                    <ul class="menuL clearfix"> <!--  메뉴 왼쪽 -->
+                        <li><a href="#" class="active">대학교</a></li>
                         <li><a href="#">입학안내</a></li>
                         <li><a href="#">대학원</a></li>
                     </ul>
-                </div>
-                <div class="menuR">     <!--  메뉴 오른쪽 -->
-                    <ul class="clearfix">
+               
+                    <ul class="menuR clearfix"> <!--  메뉴 오른쪽 -->    
                         <li><a href="#">글자크기</a></li>
-                        <li>
+                        <li class="add">
                             <a href="#"><img src="images/but01.png" alt=""></a>
                             <a href="#"><img src="images/but02.png" alt=""></a>
                         </li>
@@ -36,14 +44,14 @@
                         <li><a href="#">ENGLISH</a></li>
                         <li><a href="#">사이트맵</a></li>
                     </ul>
-                </div>
+                
             </div>
         </div>
-        <div class="gnbWrap">
+
+        <div class="mainWrap">
             <div class="gnb clearfix">
                 <div class="logo"><a href="#"></a></div>
-                <div class="menu">
-                    <ul class="clearfix">
+                    <ul class="menu clearfix"> 
                         <li><a href="#">대학소개</a></li>
                         <li><a href="#">학과소개</a></li>
                         <li><a href="#">학사안내</a></li>
@@ -54,5 +62,58 @@
             </div>
         </div>
     </header>
+    <div class="contents">
+        <section class="title">
+            <ul class="clearfix">
+                <div class="titleTxt">
+                    <p>함께 나누며 세상을 이끌어</p>
+                    <h3>세계로향하는 한국대학교</h3>
+                </div>
+                <div class="iconBox1">
+                    <li>
+                        <img src="images/icon01_01.png" alt="icon1">
+                        <p class="txt">입학절차안내</p>
+                    </li>
+                    <li>
+                        <img src="images/icon01_02.png" alt="icon2">
+                        <p class="txt">입학설명회</p>
+                    </li>
+                    <li>
+                        <img src="images/icon01_03.png" alt="icon3">
+                        <p class="txt">장학제도</p>
+                    </li>
+                    <li>
+                        <img src="images/icon01_04.png" alt="icon4">
+                        <p class="txt">증명서발급</p>
+                    </li>
+                </div>
+            </ul>    
+        </section>
+
+        <div class="container">
+            <ul class="clearfix">
+                <li>
+                    <ul class="slider1">
+                        <li><img src="images/slider01.png" alt=""></li>
+                        <li><img src="images/slider02.png" alt=""></li>
+                        <li><img src="images/slider03.png" alt=""></li>
+                    </ul>
+                </li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>
+                    <ul class="slider2">
+                        <li><img src="images/banner01_01.png" alt=""></li>
+                        <li><img src="images/banner01_02.png" alt=""></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div> 
 </body>
 </html>
