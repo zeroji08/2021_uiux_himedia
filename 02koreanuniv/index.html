@@ -18,12 +18,19 @@
     <!-- js -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
     
     <script>
         $(document).ready(function(){
             $(".slider1").bxSlider()
             $(".slider2").bxSlider()
-        })
+
+            $(".play").colorbox({
+                iframe:true,
+                innerWidth:560,
+                innerHeight:315
+            })
+        });
     </script>
 </head>
 <body>
@@ -229,8 +236,10 @@
                 <!-- 7 -->
                 <li class="box7">
                     <div class="bg"><img src="images/bg_07.png" alt=""></div>
-                    <div class="play"><img src="images/play_btn.png" alt=""></div>
+                    <div class="play"><a href="https://www.youtube.com/embed/5nCPameVdaQ" class="play"><img src="images/play_btn.png" alt=""></a></div>
                 </li>
+
+
                 <!-- 8 -->
                 <li>
                     <ul class="slider2">
