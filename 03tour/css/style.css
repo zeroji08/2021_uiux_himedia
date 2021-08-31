@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+/* header */
+#header {
+    margin-bottom:55px;
+}
+/* header Top */
+.topWrap {width:100%; height:90px;
+   background:url(../images/top_background.jpg) no-repeat center #0E73A7;}
+
+.topWrap .top {
+    width:980px;  height:90px; margin:0 auto;
+    display:flex; justify-content:space-between; align-items:center;}
+
+.topWrap .top .logo {width:150px; height: 40px; text-indent:-9999px;}
+
+.topWrap .top .logo  a {display:block; 
+    background: url(../images/logo.png) no-repeat center;}
+    
+.topWrap .top .search {width:290px; height:30px;position: relative;}
+
+input[type="text"]:focus { outline:none; }
+.searchInp {
+    width:290px; height:30px;
+    background: #fff;
+    border-radius:30px;
+    font-size:12px;
+    text-indent:90px;
+    border:0 none;
+}
+.searchIcon {
+    display: block;
+    position: absolute; top: 50%; left:10px;
+    transform: translateY(-50%);
+    width: 60px; height: 20px;
+    background:url(../images/search_icon.png);
+    text-indent:-9999px;
+}
+.searchBtn {
+    position: absolute; right: 10px; top: 50%;
+    transform: translateY(-50%);
+    width: 20px; height: 20px;
+    background: url(../images/search.png) no-repeat center;
+    text-indent:-9999px;
+    border:0 none;
+}
+
+.topWrap .top .snsMenu { width:344px; height:24px; display: flex;}
+.topWrap .top .snsMenu .tel {
+    width: 230px; height: 24px;
+    color:white; font-size:27px; font-weight:600; letter-spacing:-1px;
+    display:flex; align-items: center;
+}
+.topWrap .top .snsMenu .snsIcon {
+    width:114px; height: 24px;
+    display:flex; justify-content: space-between;
+}
+.topWrap .top .snsMenu .snsIcon div {width: 24px; height:24px; cursor: pointer;}
+.topWrap .top .snsMenu .snsIcon div:nth-child(1) { 
+    background:#1877F2 url(../images/icon01.png) no-repeat center; }
+.topWrap .top .snsMenu .snsIcon div:nth-child(2) { 
+    background:#1DA1F2 url(../images/icon02.png) no-repeat center; }
+.topWrap .top .snsMenu .snsIcon div:nth-child(3) { 
+    background:#4FBA26 url(../images/icon03.png) no-repeat center; }
+.topWrap .top .snsMenu .snsIcon div:nth-child(4) { 
+    background:#FF7510 url(../images/icon04.png) no-repeat center; }
+
+/* header gnbWrap */
+.gnbWrap {
+    width:100%; height:65px;
+    background-color:white;
+    border-bottom:5px solid #0E73A7;  
+ }
+ .gnbWrap .gnb {
+    width:980px; height:65px;
+    margin:0 auto;
+    border-bottom:5px solid #0E73A7;  
+    display: flex; justify-content: space-between;
+ }
+.gnbWrap .gnb li {
+    width:calc( 100% / 6 );
+}
+.gnbWrap .gnb li a {
+    display:block;
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+    font-size:18px; color:#14252d;
+    border-left:1px solid #e6e6e6; border-right:1px solid #e6e6e6;
+}
+.gnbWrap .gnb li a:hover {
+    background-color:#0E73A7 ;
+    color:white;
+    border:0 none;
+}
+
+
+
+/* 컨텐츠 */
+#section {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;}
+#section img {
+    display: block;
+    width: 750px; height: 533px;
+    position: absolute; left: 30%; top: 10%;
+}
+
+/* content Container1*/
+#section .container1 {
+    width:100%; height:556px;
+    margin-bottom: 16px;}
+
+/* content container1 left  */
+.container1 .container1Wrap {
+    width:482px; height:556px;
+    margin-right:16px;
+    float: left;
+    position: relative;} 
+
+.container1 .container1Wrap .reservation {width:100%; height:300px;}
+.reservation  div .content {
+    width: 346px; height:300px;
+    margin-left:130px;
+    padding:10px 35px;}
+
+.blind { 
+    display: block;
+    position: absolute;left: 0;top: -999px;}
+
+.form { width:346px; }
+.form fieldset { border: 0; margin-bottom:30px;}
+.form fieldset ul .selWrap label { 
+    display: block;
+    padding:5px 0; 
+    font-size:0.9rem;}
+
+.form fieldset ul li {width: 286px; margin-bottom:14px;}
+.form fieldset ul .selWrap select{
+    width: 282px;height:30px;
+    border-radius:5px;text-indent:10px;
+   color:#141414; font-size:0.9rem;}
+
+.form fieldset ul .dayWrap .left {
+    float:left;
+    width:130px;
+    margin-right:10px;}
+.form fieldset ul .dayWrap .right {float:left; width:130px;}
+
+.form fieldset ul .dayWrap .right label,
+.form fieldset ul .dayWrap .left label{
+    color:#141414; font-size:0.9rem;
+    margin-bottom:10px;}
+
+.form fieldset ul .dayWrap .left input {
+    width:134px; height:30px;
+    color:#141414; font-size:0.9rem; text-indent:10px;
+    border-radius:5px;}
+
+.form fieldset ul .dayWrap .right input {
+    width:134px; height:30px;
+    color:#141414; font-size:0.9rem; text-indent:10px;
+    border-radius:5px;}
+.form fieldset ul .gradeWrap > .left {
+    float:left;
+    width:188px; height:30px;
+    margin-right:10px;}
+
+.form fieldset ul .gradeWrap .left label,
+.form fieldset ul .gradeWrap .right label {
+    color:#141414; font-size:0.9rem;}
+
+.form fieldset ul .gradeWrap .left select {
+    width:188px; height: 30px;
+    border-radius: 5px;
+    color:#141414; font-size:0.9rem; text-indent:10px;}
+
+.form fieldset ul .gradeWrap .right {
+    float:left;width:80px; height: 30px;}
+
+.form fieldset ul .gradeWrap > .right > input {
+    float:left;
+    width:80px; height: 30px;
+    color:#141414; font-size:0.9rem; text-indent:10px;
+    border-radius: 5px;}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block; */
+    background: url(../img/search.jpg) no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor:pointer
+    /* border-width: thin;
+    filter: invert(0.9); */
+}
+
+
+/* 예약하기 창 */
+.reservationBtn {
+    width: 284px; height: 40px;
+    border-radius:5px;
+    background-color: #ff7510;
+    border:0;
+    font-size:1rem; font-weight:600;
+    cursor: pointer;}
+
+.rMenu {
+    width: 130px; height: 300px;
+    position: absolute; left: 0; top: 0;
+    border:0 none;}
+
+.rMenu li a {
+    display: block;
+    width:130px; height:75px;
+    background-color:#0E73A7;
+    color:white;
+    padding-left:10px;
+    line-height:75px;}
+
+.rMenu li:last-child a {border:0 none;}
+.rMenu .iconTxt {display: flex; align-items: center;}
+.rMenu li a span {
+    display:inline-block;
+    width: 34px; height: 34px;
+    margin-right:10px;}
+
+.rMenu li:nth-child(1) a span {
+    background:url(../images/airplane01.png) no-repeat center;}
+.rMenu li:nth-child(2) a span {
+    background:url(../images/hotel01.png) no-repeat center;}
+.rMenu li:nth-child(3) a span {
+    background:url(../images/car01.png) no-repeat center;}
+.rMenu li:nth-child(4) a span {
+    background:url(../images/Holiday01.png) no-repeat center;}
+
+.rMenu .bx-wrapper .bx-pager.bx-default-pager a {
+    background-color:#fff; color:black; }
+
+
+
+/* 예약 창 클릭했을 때*/
+.rMenu li a.active {background-color:#fff; color:black;}
+.rMenu li:nth-child(1) a.active  span {
+    background:url(../images/airplane02.png) no-repeat center;}
+.rMenu li:nth-child(2) a.active  span {
+    background:url(../images/hotel02.png) no-repeat center;}
+.rMenu li:nth-child(3) a.active  span {
+    background:url(../images/car02.png) no-repeat center;}
+.rMenu li:nth-child(4) a.active  span {
+    background:url(../images/Holiday02.png) no-repeat center;}
+
+
+
+/* section container1 left 베스트 상품 */
+.container1 .container1Wrap .bestBox {
+    padding-top:16px;
+    width: 100%; height: 240px;
+}
+.container1 .container1Wrap .bestBox ul li {
+    float:left;
+    width:233px; height: 240px;
+    margin-right:16px;
+    background-color:green;
+}
+.container1 .container1Wrap .bestBox ul li:nth-child(2) {
+    margin-right:0px;
+}
+
+
+/* section>container1>배너 영역 */
+.container1 .banner {
+    width: 482px; height: 556px;
+    /* background-color: crimson; */
+    float: left;
+}
+
+/* section>container2영역 */
+#section .container2 {
+    width:100%; height: 240px;
+    margin-bottom:16px;
+    position: relative;
+}
+#section .container2 ul li {
+    float:left;
+    width:233px; height: 240px;
+    margin-right:16px;
+    background-color: orange;
+}
+#section .container2 ul li:last-child {
+    margin-right:0px;
+}
+/* section>container3 영역 */
+#section .container3 {
+    width:100%; height: 240px;
+}
+#section .container3 ul li {
+    float:left;
+    width:233px; height: 240px;
+    margin-right:16px;
+    background-color:yellow;
+}
+#section .container3 ul li:last-child {
+    margin-right:0px;
+}
+
+/* footer 영역 */
+#footer {
+    width: 980px; height: 113px;
+    background-color: gray;
+    margin:0 auto;
+}

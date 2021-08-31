@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>하이미디어 투어</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/style.css">
+
+            <!-- JavaScript 영역 -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/wow.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            $('.reservation').bxSlider({
+                mode:"vertical",
+                auto:false,
+                controls:false,
+                touchEnabled:false,
+                pagerCustom: '.rMenu'
+            });// slide1st
+
+        }); // jquery ready
+    </script>
+    </head>
+    <body>
+        <!-- 맨위 상단 -->
+        <div id="wrap">
+            <header id="header">
+                <div class="topWrap">
+                    <div class="top">
+                        <h1 class="logo"><a href="">himedia tour</a></h1>
+                        <form action="#" method="POST" class="search">
+                            <label for="search" class="searchIcon">search</label>
+                            <input type="text" id="search" placeholder="검색어를 입력하세요" class="searchInp">
+                            <input type="submit" value="search" class="searchBtn">
+                        </form>
+
+                        <div class="snsMenu">
+                            <div class="tel">+82 02 1234 5678</div>
+                            <div class="snsIcon">
+                                <div class="icon01"></div>
+                                <div class="icon02"></div>
+                                <div class="icon03"></div>
+                                <div class="icon04"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 메뉴바 -->
+                <div class="gnbWrap">
+                    <ul class="gnb">
+                        <li><a href="#">여행도시</a></li>
+                        <li><a href="#">호텔예약</a></li>
+                        <li><a href="#">렌트카</a></li>
+                        <li><a href="#">여행TIP</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- 컨텐츠 영역 -->
+            <section id="section">
+                <img src="images/balloon.png"> <!-- 오른쪽 풍선 배경 -->
+                <div class="container1 clearfix">
+                    <div class="container1Wrap">
+                        <div class="reservation">
+                            <!--  예약하기 -->
+                            <div class="list1">
+                                <div class="content">
+                                    <form action="#" class="form">
+                                        <fieldset>
+                                            <legend class="blind">여행일정</legend>
+                                            <ul>
+                                                <li class="selWrap">
+                                                    <label for="golo">가고싶은 나라를 선택하세요.</label>
+                                                    <select name="golo" id="golo">
+                                                        <option value="">선택하세요</option>
+                                                        <option value="미국">미국</option>
+                                                        <option value="일본">일본</option>
+                                                        <option value="중국">중국</option>
+                                                    </select>
+                                                </li>
+                                                <li class="dayWrap clearfix">
+                                                    <div class="left">
+                                                        <label for="sdate">출발일</label>
+                                                        <input type="date" id="sdate">
+                                                    </div>
+                                                    <div class="right">
+                                                        <label for="edate">도착일</label><br>
+                                                        <input type="date" id="edate">
+                                                    </div>
+                                                </li>
+                                                <li class="gradeWrap clearfix">
+                                                    <div class="left">
+                                                        <label for="grade">좌석등급</label>
+                                                        <select name="grade" id="grade">
+                                                            <option value="">선택</option>
+                                                            <option value="비지니스">비지니스</option>
+                                                            <option value="이코노미">이코노미</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="right">
+                                                        <label for="num">인원</label>
+                                                        <input type="number" id="num" placeholder="1">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                        <input type="submit" value="예약하기" class="reservationBtn">
+                                    </form>                                    
+                                </div>
+                            </div>
+
+
+                            <div class="list2">
+                                <div class="content">
+                                    <form action="#" class="form">
+                                        <fieldset>
+                                            <legend class="blind">여행일정</legend>
+                                            <ul>
+                                                <li class="selWrap">
+                                                    <label for="golo">가고싶은 나라를 선택하세요.</label>
+                                                    <select name="golo" id="golo">
+                                                        <option value="">선택하세요</option>
+                                                        <option value="미국">미국</option>
+                                                        <option value="일본">일본</option>
+                                                        <option value="중국">중국</option>
+                                                    </select>
+                                                </li>
+                                                <li class="dayWrap clearfix">
+                                                    <div class="left">
+                                                        <label for="sdate">출발일</label>
+                                                        <input type="date" id="sdate">
+                                                    </div>
+                                                    <div class="right">
+                                                        <label for="edate">도착일</label><br>
+                                                        <input type="date" id="edate">
+                                                    </div>
+                                                </li>
+                                                <li class="gradeWrap clearfix">
+                                                    <div class="left">
+                                                        <label for="grade">좌석등급</label>
+                                                        <select name="grade" id="grade">
+                                                            <option value="">선택</option>
+                                                            <option value="비지니스">비지니스</option>
+                                                            <option value="이코노믹">이코노믹</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="right">
+                                                        <label for="num">인원</label>
+                                                        <input type="number" id="num" placeholder="1">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                        <input type="submit" value="예약하기" class="reservationBtn">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="list3">
+                                <div class="content">
+                                    <form action="#" class="form">
+                                        <fieldset>
+                                            <legend class="blind">여행일정</legend>
+                                            <ul>
+                                                <li class="selWrap">
+                                                    <label for="golo">가고싶은 나라를 선택하세요.</label>
+                                                    <select name="golo" id="golo">
+                                                        <option value="">선택하세요</option>
+                                                        <option value="미국">미국</option>
+                                                        <option value="일본">일본</option>
+                                                        <option value="중국">중국</option>
+                                                    </select>
+                                                </li>
+                                                <li class="dayWrap clearfix">
+                                                    <div class="left">
+                                                        <label for="sdate">출발일</label>
+                                                        <input type="date" id="sdate">
+                                                    </div>
+                                                    <div class="right">
+                                                        <label for="edate">도착일</label><br>
+                                                        <input type="date" id="edate">
+                                                    </div>
+                                                </li>
+                                                <li class="gradeWrap clearfix">
+                                                    <div class="left">
+                                                        <label for="grade">좌석등급</label>
+                                                        <select name="grade" id="grade">
+                                                            <option value="">선택</option>
+                                                            <option value="비지니스">비지니스</option>
+                                                            <option value="이코노믹">이코노믹</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="right">
+                                                        <label for="num">인원</label>
+                                                        <input type="number" id="num" placeholder="1">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                        <input type="submit" value="예약하기" class="reservationBtn">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="list4">
+                                <div class="content">
+                                    <form action="#" class="form">
+                                        <fieldset>
+                                            <legend class="blind">여행일정</legend>
+                                            <ul>
+                                                <li class="selWrap">
+                                                    <label for="golo">가고싶은 나라를 선택하세요.</label>
+                                                    <select name="golo" id="golo">
+                                                        <option value="">선택하세요</option>
+                                                        <option value="미국">미국</option>
+                                                        <option value="일본">일본</option>
+                                                        <option value="중국">중국</option>
+                                                    </select>
+                                                </li>
+                                                <li class="dayWrap clearfix">
+                                                    <div class="left">
+                                                        <label for="sdate">출발일</label>
+                                                        <input type="date" id="sdate">
+                                                    </div>
+                                                    <div class="right">
+                                                        <label for="edate">도착일</label><br>
+                                                        <input type="date" id="edate">
+                                                    </div>
+                                                </li>
+                                                <li class="gradeWrap clearfix">
+                                                    <div class="left">
+                                                        <label for="grade">좌석등급</label>
+                                                        <select name="grade" id="grade">
+                                                            <option value="">선택</option>
+                                                            <option value="비지니스">비지니스</option>
+                                                            <option value="이코노믹">이코노믹</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="right">
+                                                        <label for="num">인원</label>
+                                                        <input type="number" id="num" placeholder="1">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                        <input type="submit" value="예약하기" class="reservationBtn">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="rMenu">
+                            <li>
+                                <a data-slide-index="0" href="#">
+                                    <div class="iconTxt">
+                                        <span></span>공항예약
+                                    </div> 
+                                </a>
+                            </li>
+                            <li>
+                                <a data-slide-index="1" href="#">
+                                    <div class="iconTxt">
+                                        <span></span>호텔예약
+                                    </div> 
+                                </a>
+                            </li>
+                            <li>
+                                <a data-slide-index="2" href="#">
+                                    <div class="iconTxt">
+                                        <span></span>렌터카
+                                    </div> 
+                                </a>
+                            </li>
+                            <li>
+                                <a data-slide-index="3" href="#">
+                                    <div class="iconTxt">
+                                        <span></span>휴양지
+                                    </div> 
+                                </a>
+                            </li>
+                            </li>
+                        </ul>
+
+                        <div class="bestBox">
+                            <ul class="clearfix">   
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="banner">
+
+                    </div>                
+                    
+
+                </div>
+                <div class="container2">
+                    <ul class="clearfix">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="container3">
+                    <ul class="clearfix">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>                    
+                </div>
+            </section>
+
+
+            <footer id="footer">
+
+            </footer>
+        </div>
+
+
+
+
+    </body>
+</html>
