@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{    
-    font-family: 'Noto Sans KR'; 
+    font-family: 'Noto Sans KR', sans-serif;
     background:url(../images/background.jpg) no-repeat center;  
     background-size: cover;}
 
@@ -105,18 +105,26 @@ input[type="text"]:focus { outline:none; }
     width: 980px;
     margin: 0 auto;
     position: relative;}
-#section img {
+
+/* 풍선부분 */
+    #section img {
     display: block;
     width: 750px; height: 533px;
     position: absolute; left: 30%; top: 10%;
 }
+#section .titleTxt{
+    display: block;
+    color: #162530;
+    position: absolute; left:53%; top:0;}
+#section h3{font-size: 70px;}
+#section p{font-size: 33px;}
 
-/* content Container1*/
-#section .container1 {
+/* Container1*/
+#section .container01 {
     width:100%; height:556px;
     margin-bottom: 16px;}
 
-/* content container1 left  */
+/* container1 left  */
 .container1 .container1Wrap {
     width:482px; height:556px;
     margin-right:16px;
@@ -127,7 +135,7 @@ input[type="text"]:focus { outline:none; }
 .reservation  div .content {
     width: 346px; height:300px;
     margin-left:130px;
-    padding:10px 35px;}
+    padding: 18px 35px;}
 
 .blind { 
     display: block;
@@ -202,7 +210,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-/* 예약하기 창 */
+
 .reservationBtn {
     width: 284px; height: 40px;
     border-radius:5px;
@@ -221,7 +229,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width:130px; height:75px;
     background-color:#0E73A7;
     color:white;
-    padding-left:10px;
+    padding-left:12px;
     line-height:75px;}
 
 .rMenu li:last-child a {border:0 none;}
