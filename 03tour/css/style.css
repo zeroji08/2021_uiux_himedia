@@ -117,14 +117,14 @@ input[type="text"]:focus { outline:none; }
     color: #162530;
     position: absolute; left:53%; top:0;}
 #section h3{font-size: 70px;}
-#section p{font-size: 33px;}
+#section p{font-size: 33px; font-weight: 400;}
 
-/* Container1*/
+/* Container1 */
 #section .container01 {
     width:100%; height:556px;
     margin-bottom: 16px;}
 
-/* container1 left  */
+/* container1 left */
 .container1 .container1Wrap {
     width:482px; height:556px;
     margin-right:16px;
@@ -209,8 +209,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(0.9); */
 }
 
-
-
 .reservationBtn {
     width: 284px; height: 40px;
     border-radius:5px;
@@ -253,7 +251,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
-/* 예약 창 클릭했을 때*/
+/* 예약 창 클릭했을 때 (아이콘 색 변경 된거)*/
 .rMenu li a.active {background-color:#fff; color:black;}
 .rMenu li:nth-child(1) a.active  span {
     background:url(../images/airplane02.png) no-repeat center;}
@@ -274,7 +272,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .container1 .container1Wrap .bestBox ul li {
     float:left;
     width:233px; height: 240px;
-    margin-right:16px;
+    margin-right:16px; margin-bottom: 16px;
     background-color:green;
 }
 .container1 .container1Wrap .bestBox ul li:nth-child(2) {
@@ -282,12 +280,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-/* 배너 banner */
-.container1 .banner {
-    width: 482px; height: 556px;
-    /* background-color: crimson; */
-    float: left;
-}
+
 
 /*container2 */
 #section .container2 {
