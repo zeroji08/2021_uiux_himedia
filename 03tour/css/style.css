@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+body { 
+    font-family: 'Noto Sans KR'; 
+    background:url(../img/background.jpg) no-repeat center;  
+    background-size: cover;
+}
+
 /* header */
 #header {
     margin-bottom:55px;
