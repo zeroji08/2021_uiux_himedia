@@ -326,8 +326,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: orange;
 }
 #section .container2 ul li:last-child {
-    margin-right:0px;
-}
+    margin-right:0px;}
+
 /* container3 */
 #section .container3 {
     width:100%; height: 240px;
