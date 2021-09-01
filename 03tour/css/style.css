@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
-body { 
-    font-family: 'Noto Sans KR'; 
-    background:url(../images/background.jpg) no-repeat center;  
-    background-size: cover;
-}
+
 
 /* header */
 #header {
@@ -103,6 +99,10 @@ input[type="text"]:focus { outline:none; }
 
 /* 컨텐츠 */
 #section {
+    font-family: 'Noto Sans KR'; 
+    background:url(../images/background.jpg) no-repeat center;  
+    background-size: cover;
+    
     width: 980px;
     margin: 0 auto;
     position: relative;}
