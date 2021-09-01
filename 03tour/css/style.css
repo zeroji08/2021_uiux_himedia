@@ -264,20 +264,50 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
-/* section container1 left 베스트 상품 */
+/* section container1 bestBox */
 .container1 .container1Wrap .bestBox {
     padding-top:16px;
+    
     width: 100%; height: 240px;
 }
 .container1 .container1Wrap .bestBox ul li {
     float:left;
     width:233px; height: 240px;
-    margin-right:16px; margin-bottom: 16px;
+    margin-right:16px; 
+    margin-bottom: 16px;
     background-color:green;
 }
+
+/* bestBox fance */
+.container1 .container1Wrap .bestBox ul li:nth-child(1) {
+    background-image: url(../images/france.png);}
+.container1 .container1Wrap .bestBox ul li:nth-child(1) .fanceTxt{
+    width: 233px; height: 50px;
+	background-color: #152630;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;}
+.container1 .container1Wrap .bestBox ul li:nth-child(1) span{
+    color: #62B05D; 
+    padding: 0 14px 0 20px;}
+
+  /* bestBox england */
 .container1 .container1Wrap .bestBox ul li:nth-child(2) {
-    margin-right:0px;
-}
+    background-image: url(../images/england.png);
+    margin-right:0px;}
+.container1 .container1Wrap .bestBox ul li:nth-child(2) .englandTxt{
+    width: 233px; height: 50px;
+	background-color: #152630;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;}
+.container1 .container1Wrap .bestBox ul li:nth-child(2) span{
+    color: #62B05D; 
+    padding: 0 14px 0 20px;}
 
 
 
@@ -285,6 +315,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /*container2 */
 #section .container2 {
     width:100%; height: 240px;
+    padding-top: 16px;
     margin-bottom:16px;
     position: relative;
 }
@@ -300,6 +331,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* container3 */
 #section .container3 {
     width:100%; height: 240px;
+    padding-top: 16px;
+    position: relative;
 }
 #section .container3 ul li {
     float:left;
@@ -314,6 +347,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* footer */
 #footer {
     width: 980px; height: 113px;
+    position: relative;
     background-color: gray;
     margin:0 auto;
 }
