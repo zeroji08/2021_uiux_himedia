@@ -379,6 +379,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* sub company  */
 
+body.sub{background: #a9d7f3;}
 .subContent.company .subImg{
     background-image: url(../images/subimg01.jpg);
     
