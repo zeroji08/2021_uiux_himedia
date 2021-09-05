@@ -402,22 +402,70 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #section .container2 li:nth-child(4) .sName{font-size: 13px;}
 
 /* container3 */
-#section .container3 {
+.container3 {
     width:100%; height: 240px;
     padding-top: 16px;
-    position: relative;
-
-
-}
-#section .container3 ul li {
+    margin-bottom:16px;
+    position: relative;}
+.container3 li {
     float:left;
     width:233px; height: 240px;
     margin-right:16px;
-    background-color:yellow;
+    background-color:purple;}
+.container3 li:last-child {margin-right:0px;}
+.container3 li img{width: 233px;height: 240px; position: absolute;}
+.infoBtn {
+    display:block;
+    position:relative;
+    width:233px; height:240px;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;}
+.infoBgc {
+    width:100%; height:100%; 
+    background:rgba(0, 0, 0, 0.5);
+    transition:0.4s}
+.infoText {
+    width:100%; height:100px;
+    color: #fff; 
+    font-size:20px; 
+    padding-top:5px; line-height:24px; text-align: center;
+    position: absolute; left:0; top:0;
+    padding-top:30px;
 }
-#section .container3 ul li:last-child {
-    margin-right:0px;
+.infoText span { font-size:14px; }
+.infoText .infoTxtSub { color:white; font-size:12px; text-align: center; }
+.infoMore {
+    width:20px; height:20px;
+    position:absolute; left:50%;top:50%;
+    transform:translate(-50%,-50%);
+    border:2px solid white; border-radius:50%;
+    transition:0.3s;
 }
+.infoMore .bar2,
+.infoMore .bar1 {
+    width:14px;height:2px;
+    background: #fff;
+    position:absolute; left: 50%;top: 50%;
+    transform:translate(-50%,-50%);
+    border-radius:1px;
+}
+.infoMore .bar1 { 
+    transform:translate(-50%,-50%) rotate(90deg) 
+}
+.infoSub {
+    width: 100%;
+    color:white; font-size:12px;
+    position: absolute; left:0; bottom:0;
+    padding-bottom:20px;
+    text-align: center;
+    transition: all ease 1s 0s;
+    opacity:0;
+}
+.infoBtn:hover .infoBgc {background:rgba(0, 0, 0, 0.8)}
+.infoBtn:hover .infoMore { transform:translate(-50%,-50%) rotate(90deg); }
+.infoBtn:hover .infoSub { opacity:1; }
+
 
 /* footer */
 #footer {
