@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/* bx slider */
+.bx-wrapper {
+    -moz-box-shadow:0 none;
+    -webkit-box-shadow:0 none;
+    box-shadow:0 none;/* 테두리-없애기 */
+    border: 0 none;/* 테두리-없애기 */
+    margin-bottom: 0;/* 테두리-없애기 */
+}
+
+.mB_0 {
+    margin-bottom:0;
+}
+
 
 body{    
     font-family: 'Noto Sans KR', sans-serif;
@@ -107,7 +120,7 @@ input[type="text"]:focus { outline:none; }
     position: relative;}
 
 /* 풍선부분 */
-    #section img {
+#section .balloon img{
     display: block;
     width: 750px; height: 533px;
     position: absolute; left: 30%; top: 10%;
@@ -116,8 +129,8 @@ input[type="text"]:focus { outline:none; }
     display: block;
     color: #162530;
     position: absolute; left:53%; top:0;}
-#section h3{font-size: 70px;}
-#section p{font-size: 33px; font-weight: 400;}
+#section .titleTxt h3{font-size: 70px;}
+#section .titleTxt p{font-size: 33px; font-weight: 400;}
 
 /* Container1 */
 #section .container01 {
@@ -198,15 +211,12 @@ input[type="text"]:focus { outline:none; }
     border-radius: 5px;}
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    /* color: rgba(0, 0, 0, 0);
-    opacity: 1;
-    display: block; */
+
     background: url(../images/search.png) no-repeat;
     width: 20px;
     height: 20px;
     cursor:pointer
-    /* border-width: thin;
-    filter: invert(0.9); */
+
 }
 
 .reservationBtn {
@@ -267,7 +277,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* section container1 bestBox */
 .container1 .container1Wrap .bestBox {
     padding-top:16px;
-    
     width: 100%; height: 240px;
 }
 .container1 .container1Wrap .bestBox ul li {
@@ -288,7 +297,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     bottom: 0;
     text-align: center;
-    line-height: 50px;}
+    line-height: 50px;
+    cursor: pointer;}
 .container1 .container1Wrap .bestBox ul li:nth-child(1) span{
     color: #62B05D; 
     padding: 0 14px 0 20px;}
@@ -304,7 +314,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     bottom: 0;
     text-align: center;
-    line-height: 50px;}
+    line-height: 50px;
+    cursor: pointer;}
 .container1 .container1Wrap .bestBox ul li:nth-child(2) span{
     color: #62B05D; 
     padding: 0 14px 0 20px;}
@@ -316,23 +327,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #section .container2 {
     width:100%; height: 240px;
     padding-top: 16px;
-    margin-bottom:16px;
+    margin-bottom: 16px;
     position: relative;
+
 }
-#section .container2 ul li {
+#section .container2 li {
     float:left;
     width:233px; height: 240px;
     margin-right:16px;
-    background-color: orange;
+    background-color:purple;
 }
-#section .container2 ul li:last-child {
-    margin-right:0px;}
+#section .container2 li:last-child {
+    margin-right:0px;
+}
 
+#section .container2 li:nth-child(1) .text01{
+    width: 233px;height: 50px;
+    background: green;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
 /* container3 */
 #section .container3 {
     width:100%; height: 240px;
     padding-top: 16px;
     position: relative;
+
+
 }
 #section .container3 ul li {
     float:left;
@@ -346,10 +371,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* footer */
 #footer {
-    width: 980px; height: 113px;
-    position: relative;
-    background-color: gray;
+    width: 980px;
     margin:0 auto;
+    padding-top:40px; padding-bottom:40px;
+}
+#footer .lnb {
+    margin-bottom:5px;
+}
+#footer .lnb ul {
+    display: flex;
+}
+#footer .lnb ul li a {
+    display: block;
+    padding-left:20px;
+    color:#303339; font-size:16px;  
+    transition:0.3s;  
+}
+#footer .lnb ul li:first-child a { padding-left:0; }
+#footer .lnb ul li a:hover { color:#000; }
+#footer address {
+    color:#7b7b7b; font-size:12PX; font-style: normal;
 }
 
 
