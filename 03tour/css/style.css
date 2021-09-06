@@ -513,7 +513,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* sub common  */
 .subContent .subImg{
-    height: 300px;
+    height: 400px;
     display: flex;justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
@@ -536,11 +536,62 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
  /* sub01  */
  .subContent.cityTour .subImg{
+    background-image: url(../images/subimg01.jpg);
+    top: 0;}
+
+.subContent.cityTour .container{
+    border: 1px solid #999;
+    border-top: 5px solid #0664A1;
+    border-bottom: 5px solid #0664A1;
+    position: relative;top:-50px;
+    background: #fff;
+}
+ /* sub02  */
+ .subContent.hotel .subImg{
     background-image: url(../images/subimg02.jpg);
     top: 0;
 }
 
-.subContent.cityTour .container{
+.subContent.hotel .container{
+    border: 1px solid #999;
+    border-top: 5px solid #0664A1;
+    border-bottom: 5px solid #0664A1;
+    position: relative;top:-50px;
+    background: #fff;
+}
+ /* sub03 */
+ .subContent.car .subImg{
+    background-image: url(../images/subimg03.jpg);
+    top: 0;
+}
+
+.subContent.car .container{
+    border: 1px solid #999;
+    border-top: 5px solid #0664A1;
+    border-bottom: 5px solid #0664A1;
+    position: relative;top:-50px;
+    background: #fff;
+}
+ /* sub04  */
+ .subContent.TIP .subImg{
+    background-image: url(../images/subimg04.jpg);
+    top: 0;
+}
+
+.subContent.TIP .container{
+    border: 1px solid #999;
+    border-top: 5px solid #0664A1;
+    border-bottom: 5px solid #0664A1;
+    position: relative;top:-50px;
+    background: #fff;
+}
+ /* sub05  */
+ .subContent.community .subImg{
+    background-image: url(../images/subimg05.jpg);
+    top: 0;
+}
+
+.subContent.community .container{
     border: 1px solid #999;
     border-top: 5px solid #0664A1;
     border-bottom: 5px solid #0664A1;
@@ -550,10 +601,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
-/* sub04  */
+/* sub06  */
 body.sub{background: #a9d7f3;}
 .subContent.company .subImg{
-    background-image: url(../images/subimg01.jpg);
+    background-image: url(../images/subimg06.jpg);
     
     
 }
