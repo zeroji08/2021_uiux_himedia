@@ -3,8 +3,18 @@ html,body{height: 100%;}
 
 #header_top .logo{background: red;height: 50px;padding: 0 10px;}
 
-
-
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+}
+.sliderWrap .slideTxt{
+    position: absolute;left: 50%;top: 30%;
+    transform: translate(-50%,-50%);
+    width: 500px;text-align: center;
+}
+.sliderWrap .slideTxt h3{font-size: 3em;}
 
 
 
@@ -12,7 +22,7 @@ html,body{height: 100%;}
     #main_header{height: 1950px;background: #ddd;}
 
     #header_top{
-        width: 1240px;background: pink;
+        width: 1240px;background: pink;z-index: 1;
         position: fixed;left:50%;transform: translateX(-50%);top:20px;
         display: flex;justify-content: space-between;align-items:center
     }
@@ -21,6 +31,20 @@ html,body{height: 100%;}
     #header_top .gnb li{float: left;}
     #header_top .gnb li>a{display: block;line-height: 50px;text-align: center;padding:0 30px}
     .toggle{display: none;}
+
+    .sliderWrap .li_1st,.sliderWrap .li_2st{
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sliderWrap .li_1st{
+        background-image: url(../images/mainimg01.jpg);
+    }
+    .sliderWrap .li_2st{
+        background-image: url(../images/mainimg02.jpg);
+    }
+    
     
 } /* pc media */
 
@@ -29,7 +53,7 @@ html,body{height: 100%;}
     #main_header{background: #ddd;}
 
     #header_top{
-        background: pink;padding: 0 16px;
+        background: pink;padding: 0 16px;z-index:1;
         position: fixed;width: 100%;
         display: flex;justify-content: space-between;align-items:center
     }
@@ -44,5 +68,20 @@ html,body{height: 100%;}
     }
     .toggle .bar1{top:10px}
     .toggle .bar3{top:30px}
-    
+
+    .sliderWrap .li_1st,.sliderWrap .li_2st{
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sliderWrap .li_1st{
+        background-image: url(../images/mainimg01.jpg);
+    }
+    .sliderWrap .li_2st{
+        background-image: url(../images/mainimg02.jpg);
+    }
+
+    .sliderWrap .slideTxt{width: 300px;top:50%}
+
 }/* mobile media */
