@@ -46,3 +46,22 @@ $(document).ready(function(){
     });
    
 });
+
+//POP CULTURE 
+    $(document).ready(function(){ 
+        $('.sec3_list').bxSlider({ 
+            auto:true, 
+            pager: false, 
+            controls: true, 
+            autoControls: false,
+            minSlides: 4, 
+            maxSlides: 4, 
+            moveSlides: 2, 
+            slideWidth: 285, 
+            slideMargin: 20, 
+            autoHover:true, 
+            prevText:"", 
+            nextText:"" 
+
+        }); 
+    });
