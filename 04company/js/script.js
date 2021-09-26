@@ -65,3 +65,30 @@ $(document).ready(function(){
 
         }); 
     });
+
+
+    //동영상 팝업
+    $(document).ready(function(){
+        $(".modal").colorbox({
+            rel:"modal"
+        });
+
+        $(".youtube").colorbox({
+            iframe:true,
+            innerWidth:700,
+            innerHeight:394
+        })
+    });
+    var videoSrc = $("#myModal iframe").attr("src");
+
+    $('#myModal').on('show.bs.modal', function () { 
+    // on opening the modal
+      // set the video to autostart
+      $("#myModal iframe").attr("src", videoSrc+"&amp;autoplay=1");
+    });
+    
+    $("#myModal").on('hidden.bs.modal', function (e) { 
+    // on closing the modal
+      // stop the video
+      $("#myModal iframe").attr("src", null);
+    });
