@@ -56,9 +56,9 @@ $(document).ready(function(){
             autoControls: false,
             minSlides: 4, 
             maxSlides: 4, 
-            moveSlides: 2, 
+            moveSlides: 1, 
             slideWidth: 285, 
-            slideMargin: 20, 
+            slideMargin: 10, 
             autoHover:true, 
             prevText:"", 
             nextText:"" 
