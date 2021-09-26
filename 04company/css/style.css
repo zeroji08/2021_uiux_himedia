@@ -39,18 +39,30 @@ html,body{height: 100%;}
 
 .content>ul>li{
     width: 25%;height: 310px;background: orange;
+     color: #fff;
     }
 
 .content>ul>li:nth-child(2n){background: #E5E5E5;}
-.content>ul>li:nth-child(1){background: #1B4669;display: flex;justify-content: center;align-items: center;}
-.content>ul>li:nth-child(2){background: pink}
+.content>ul>li:nth-child(1){background: #1B4669;display: flex;justify-content: center;align-items: center; text-align: center;} 
+.content>ul>li:nth-child(2){background: pink }
 .content>ul>li:nth-child(3){width: 50%;}
-.content>ul>li:nth-child(4){background: #2A3358; height: 620px;}
-.content>ul>li:nth-child(5){background: #FC4F02;display: flex;justify-content: center;align-items: center;}
-.content>ul>li:nth-child(6){background: #1B4669;display: flex;justify-content: center;align-items: center;}
-.content>ul>li:nth-child(7){background: #FC4F02;display: flex;justify-content: center;align-items: center;}
+.content>ul>li:nth-child(4){position: relative;background: #2A3358; height: 620px; }
+.content>ul>li:nth-child(4) .text04{position: absolute; left: 30px; top: 37px;}
+.content>ul>li:nth-child(4) .text04 .text04_01{font-weight: bold; margin-bottom: 10px;}
+.content>ul>li:nth-child(4) .text04 .text04_01:after{
+    content:"";display: block;
+    width: 50px;height: 2px;background: #FC4F02;
+    margin-top: 15px;}
+.content>ul>li:nth-child(4) .text04 .text04_02{
+    left: 30px;
+    font-weight: bold; font-size: 33px; line-height: 47px;}
+.content>ul>li:nth-child(5){background: #FC4F02;display: flex;justify-content: center;align-items: center; text-align: center;}
+.content>ul>li:nth-child(6){background: #1B4669;display: flex;justify-content: center;align-items: center; text-align: center;}
+.content>ul>li:nth-child(7){background: #FC4F02;display: flex;justify-content: center;align-items: center; text-align: center;}
 .content>ul>li:nth-child(8){background: #FEC548;position: absolute;bottom: 0;right: 620px; display: flex;justify-content: center;align-items: center;}
-.content>ul>li:nth-child(9){position: absolute;width: 50%;right: 0;bottom: 0;background: #619CF6;}
+.content>ul>li:nth-child(9){position: absolute;background: #619CF6;width: 50%;right: 0;bottom: 0;}
+
+
 
 
 .content.icon{
@@ -133,7 +145,7 @@ html,body{height: 100%;}
         border-radius:20px 20px 0 0;overflow: hidden;
         box-shadow:0 0 20px rgba(0,0,0,0.5)
     }
-
+    
 /* container01 */
 .container01{
     background: url(../images/pop_bg.jpg) no-repeat center fixed;
@@ -268,7 +280,6 @@ a.bx-next{position:absolute;
 
     .content{width: 100%;}
     .content>ul>li{width: 50%;order:11}
-
 
     .content>ul>li:nth-child(1){order:-1}
     
