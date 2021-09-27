@@ -111,6 +111,7 @@ html,body{height: 100%;}
 
 
 
+
 @media screen and ( min-width:700px ){
     #header{height: 1930px; _background: #ddd;position: relative;margin-bottom: 60px;}
     #header > #headerTopWrap { 
@@ -242,6 +243,13 @@ a.bx-next{position:absolute;
 
 .container02 .section02 .sns_icon{text-align:center}
 .container02 .section02 .sns_icon img{display:inline-block; vertical-align:middle; margin-right: 30px;}
+
+/* sub01story */
+
+/*tab css*/
+
+
+
 /* footer */
 #footer {background-color:#15456B;}
 #footer .footerWrap {width:1200px; height:200px; margin:0 auto; padding: 50px;}

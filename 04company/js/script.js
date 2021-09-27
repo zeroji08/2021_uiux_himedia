@@ -79,16 +79,7 @@ $(document).ready(function(){
             innerHeight:394
         })
     });
-    var videoSrc = $("#myModal iframe").attr("src");
 
-    $('#myModal').on('show.bs.modal', function () { 
-    // on opening the modal
-      // set the video to autostart
-      $("#myModal iframe").attr("src", videoSrc+"&amp;autoplay=1");
-    });
-    
-    $("#myModal").on('hidden.bs.modal', function (e) { 
-    // on closing the modal
-      // stop the video
-      $("#myModal iframe").attr("src", null);
-    });
+
+    // sub tab
+   
