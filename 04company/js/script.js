@@ -82,4 +82,20 @@ $(document).ready(function(){
 
 
     // sub tab
-   
+    const tabList = document.querySelectorAll('.tab li');
+    const boxList = document.querySelectorAll('.section > div');
+
+    for (let j=0;j<tabList.length;j++){
+        tabList[j].onclick = function(){
+        for(let i=0;i<tabList.length;i++){
+            tabList[i].classList.remove('on');
+            boxList[i].style.display = 'none';
+            tabList[i].style.background = 'none';
+            tabList[i].style.color = '#333';
+        };
+        tabList[j].classList.add('on');
+        boxList[j].style.display = 'block'
+        tabList[j].style.background = '#EE2C33'
+        tabList[j].style.color = 'white'
+        };
+    };
