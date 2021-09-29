@@ -44,12 +44,30 @@ html,body{height: 100%;
      color: #fff;}
 
 .content>ul>li:nth-child(2n){background: #E5E5E5;}
+
 .content>ul>li:nth-child(1){background: #1B4669;display: flex;justify-content: center;align-items: center; text-align: center;} 
+
 .content>ul>li:nth-child(2){background-image: url(../images/icon01_02.png);}
 .content>ul>li:nth-child(2) img{display: block; margin-top: 40%; margin-left: 40%;} 
 
+.content>ul>li:nth-child(3){position: relative;background: #BED367;width: 50%;}
+.content>ul>li:nth-child(3) .text03 .text03_02{margin-bottom: 33px;}
+.content>ul>li:nth-child(3) .text03 a{
+    display: block;
+    width: 170px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #FC4F02;
+    color:#FC4F02;
+    font-weight: 600;}
+.content>ul>li:nth-child(3) .text03 a:hover{
+    display: block;
+    width: 170px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #FC4F02;
+    color:#fff;}
 
-.content>ul>li:nth-child(3){width: 50%;}
 .content>ul>li:nth-child(4){position: relative;background: #2A3358; height: 620px; }
 .content>ul>li:nth-child(5){background: #FC4F02;display: flex;justify-content: center;align-items: center; text-align: center;}
 .content>ul>li:nth-child(6){background: #1B4669;display: flex;justify-content: center;align-items: center; text-align: center;}
@@ -57,17 +75,24 @@ html,body{height: 100%;
 .content>ul>li:nth-child(8){background: #FEC548;position: absolute;bottom: 0;right: 620px; display: flex;justify-content: center;align-items: center;}
 .content>ul>li:nth-child(9){position: absolute;background: #619CF6;width: 50%;right: 0;bottom: 0;}
 
+.content>ul>li:nth-child(3) .text03,
 .content>ul>li:nth-child(4) .text04,
-.content>ul>li:nth-child(9) .text09
-{position: absolute; left: 35px; top: 40px;}
+.content>ul>li:nth-child(9) .text09{
+    position: absolute; left: 35px; top: 40px;}
+
+.content>ul>li:nth-child(3) .text03 .text03_01,
 .content>ul>li:nth-child(4) .text04 .text04_01,
 .content>ul>li:nth-child(9) .text09 .text09_01{
-    font-weight: bold; margin-bottom: 15px;}
+    font-weight: bold; margin-bottom: 13px;}
+
+.content>ul>li:nth-child(3) .text03 .text03_01:after,
 .content>ul>li:nth-child(4) .text04 .text04_01:after,
 .content>ul>li:nth-child(9) .text09 .text09_01:after{  
     content:"";display: block;
     width: 50px;height: 2px;background: #FC4F02;
-    margin-top: 15px;}
+    margin-top: 12px;}
+
+.content>ul>li:nth-child(3) .text03 .text03_02,
 .content>ul>li:nth-child(4) .text04 .text04_02,
 .content>ul>li:nth-child(9) .text09 .text09_02{
     left: 30px;

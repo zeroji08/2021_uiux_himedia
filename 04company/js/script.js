@@ -51,6 +51,8 @@ $(document).ready(function(){
     $(document).ready(function(){ 
         $('.sec3_list').bxSlider({ 
             auto:true, 
+            speed : 1400,
+            pause : 1600,
             pager: false, 
             controls: true, 
             autoControls: false,
