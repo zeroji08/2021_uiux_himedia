@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>company</title>
+
+    <style>
+        :root{
+            --primary-color1:#4455cc;
+            --primary-color2:#854fee;
+            --bg-color1:#efefef;
+            --gradient-color:linear-gradient(90deg,#4455cc,#854fee);
+            --box-shadow:0 0 15px rgba(0,0,0,0.5)
+         }
+         li{list-style: none;}
+         ul{padding: 0;}
+         .headerWrap {transition:0.3s}
+         .headerWrap .nav-item{font-size: 1.2em;border-bottom: 4px solid transparent;padding:0 10px;transition:0.3s}
+        .headerWrap .nav-item:hover{border-bottom: 4px solid var(--primary-color2);}
+        .headerWrap.fixed-top{box-shadow: 0 0 20px rgba(0,0,0,0.3);transition: 0.3s;}
+        
+        .visualWrap{
+            background: url(assets/slider-bg.svg) no-repeat center bottom;
+        }
+
+        .content{background: var(--bg-color1);}
+
+        .btn.button-primary{background:var(--gradient-color);box-shadow:var(--box-shadow)}
+        .service .card{background: var(--bg-color1);border: 0 none;transition:0.3s}
+        .service .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
+        .service .card img{height: 200px;}
+
+        .portfolio{background: var(--bg-color1);}
+        .portfolio .row img{border-radius: 10px;}
+
+        .footer .icon li+li{margin-left: 20px;}
+        .footer .icon a{
+            display: block;width: 40px;height: 40px;
+            background:var(--bg-color1);text-align: center;line-height: 35px;
+            border-radius: 20px;
+        }
+        .customer .item{border-radius:5px}
+        .footer .icon a:hover{box-shadow: var(--box-shadow);}
+        .footer .icon img{width: 15px;}
+
+        @media screen and (max-width:576px){
+            .headerWrap .nav-item,.headerWrap .nav-item:hover{border-bottom: none;}
+        }
+        
+    </style>
+   </head>
+  <body>
+      <div class="headerWrap bg-light">
+          <div class="container">
+              <nav class="navbar navbar-expand-md navbar-light bg-light">
+                  <a class="navbar-brand" href="#"><img src="assets/logo.svg" alt=""></a>
+                  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavId">
+                      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">HOME</a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">ABOUT</a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">SERVICE</a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">COMMUNITY</a>
+                          </li>
+          
+                      </ul>
+          
+                  </div>
+              </nav>
+          </div>
+      </div>
+
+      <div class="visualWrap">
+          <div class="container py-5">
+              <div class="row">
+                  <div class="col-md-6 col-lg-4 align-self-center mb-5 mb-md-0">
+                      <h2 class="text-center text-md-left">Lorem ipsum dolor sit.</h2>
+                      <p class="text-center text-md-left">Lorem ipsum dolor sit amet.</p>
+                      <a href="#!" class="btn btn-primary d-block d-md-inline mb-2 mb-md-0">MORE</a>
+                      <a href="#!" class="btn btn-outline-primary d-block d-md-inline">EMAIL</a>
+                  </div>
+                  <div class="col-md-6 col-lg-8">
+                      <img src="assets/slider.svg" alt="" class="img-fluid">
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <div class="content">
+          <div class="container py-5 px-5 px-md-0">
+              <div class="row">
+                <div class="col-md-6 order-md-1 order-2">
+                    <img src="assets/sobre.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 order-md-2 order-1 mb-5 mb-md-0 align-self-center">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aut.</h4>
+                    <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quae optio laborum voluptatibus libero vero, ipsum blanditiis distinctio esse ullam.</p>
+                    <a href="#!" class="btn button-primary text-white d-block d-md-inline px-5">ENTER CONTACT</a>
+                </div>
+
+              </div>
+          </div>
+      </div>
+
+    
+
+      <div class="service">
+          <div class="container py-5 px-5 px-md-0">
+              <h2 class="text-center mb-5">gallery</h2>
+              <div class="row">
+                  <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                      <div class="card">
+                          <img src="assets/destaque1.svg" alt="" class="img-fluid m-3">
+                          <div class="card-body">
+                              <h4 class="card-title">Lorem, ipsum.</h4>
+                              <p class="card-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, accusantium!</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="card">
+                        <img src="assets/destaque2.svg" alt="" class="img-fluid m-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem, ipsum.</h4>
+                            <p class="card-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, accusantium!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="card">
+                        <img src="assets/destaque3.svg" alt="" class="img-fluid m-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem, ipsum.</h4>
+                            <p class="card-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, accusantium!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <div class="card">
+                        <img src="assets/destaque4.svg" alt="" class="img-fluid m-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem, ipsum.</h4>
+                            <p class="card-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, accusantium!</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="portfolio">
+          <div class="container py-5">
+              <h2 class="text-center mb-5">PORTFOLIO</h2>
+              <div class="btn-group mb-3">
+                  <button class="btn btn-primary active" data-filter="*" id="btn1">all</button>
+                  <button class="btn btn-primary" data-filter=".web">WEBSITE</button>
+                  <button class="btn btn-primary" data-filter=".illust">ILLUST</button>
+                  <button class="btn btn-primary" data-filter=".photo">PHOTOSHOP</button>
+              </div>
+              <div class="row">
+                  <div class="col-6 col-lg-3 element-item web mb-3">
+                      <a href="assets/servicos/1.jpg" class="popup_link"><img src="assets/servicos/1.jpg" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="col-6 col-lg-3 element-item illust mb-3">
+                      <a href="assets/servicos/2.jpg" class="popup_link"><img src="assets/servicos/2.jpg" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="col-6 col-lg-3 element-item web mb-3">
+                      <a href="assets/servicos/3.jpg" class="popup_link"><img src="assets/servicos/3.jpg" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="col-6 col-lg-3 element-item photo mb-3">
+                      <a href="assets/servicos/4.jpg" class="popup_link"><img src="assets/servicos/4.jpg" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="col-6 col-lg-3 element-item web mb-3">
+                      <a href="assets/servicos/5.jpg" class="popup_link"><img src="assets/servicos/5.jpg" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="col-6 col-lg-3 element-item illust mb-3">
+                      <a href="assets/servicos/6.jpg" class="popup_link"><img src="assets/servicos/6.jpg" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="col-6 col-lg-3 element-item web mb-3">
+                      <a href="assets/servicos/7.jpg" class="popup_link"><img src="assets/servicos/7.jpg" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="col-6 col-lg-3 element-item photo mb-3">
+                      <a href="assets/servicos/8.jpg" class="popup_link"><img src="assets/servicos/8.jpg" alt="" class="img-fluid"></a>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+ 
+      <div class="customer mb-5">
+          <div class="container py-5">
+              <h2 class="text-center mb-3">CUSTOMER</h2>
+              <div class="owl-carousel owl-theme">
+                  <div class="item d-flex p-4 bg-danger text-white flex-row flex-lg-column">
+                      <img src="assets/user.svg" alt="" class="img-fluid d-block m-auto" style="width:150px">
+                      <div class="ml-4 ml-lg-0">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, aut.</p>
+                          <p class="d-lg-none"><img src="assets/quote.svg" alt="" class="ml-auto" style="width:35px"></p>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+
+      <div class="footer bg-light">
+          <div class="container py-5">
+              <div class="row">
+                  <div class="col-md-6 text-center text-md-left mb-5" >
+                      <img src="assets/logo.svg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-md-6 mb-5 mb-md-0">
+                      <ul class="icon d-flex justify-content-center justify-content-md-end">
+                          <li><a href="#!"><img src="assets/facebook.svg" alt=""></a></li>
+                          <li><a href="#!"><img src="assets/twitter.svg" alt=""></a></li>
+                          <li><a href="#!"><img src="assets/instagram.svg" alt=""></a></li>
+                          <li><a href="#!"><img src="assets/linkedin.svg" alt=""></a></li>
+                          <li><a href="#!"><img src="assets/youtube.svg" alt=""></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="text-center mb-5 pt-3" style="border-top: 1px solid #ccc;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores!
+              </div>
+          </div>
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        $(window).scroll(function(){
+            let scrollY = $(window).scrollTop();
+            if(scrollY > 200){
+                $(".headerWrap").addClass("fixed-top")
+            }else{
+                $(".headerWrap").removeClass("fixed-top")
+            }
+        });
+        
+        // isotope
+        const btns = $(".portfolio .btn-group .btn");
+        btns.click(function(){
+            let i = $(this).index()
+            btns.removeClass("active");
+            $(this).addClass("active");
+
+            let selector = $(this).attr("data-filter");
+            console.log(selector)
+            $(".portfolio .row").isotope({
+                filter:selector
+            })
+        })
+        // isotope load
+        window.onload = function(){
+            $(".portfolio .btn-group #btn1").trigger("click");
+        }
+
+        // light box - modal
+        $(".portfolio .row .popup_link").magnificPopup({type:"image"})
+
+        
+        // slider 
+        $(".customer .owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            //nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                992:{
+                    items:4
+                }
+            }
+        })
+    </script>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+  </body>
+</html>
