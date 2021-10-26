@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>볼보volvo</title>
+
+    <style>
+        :root{
+            --primary-color1:#D7D2D4;
+            --primary-color2:#514E55;
+            --bg-color1:#efefef;
+            --gradient-color:linear-gradient(90deg,#514E55,#D7D2D4);
+            --box-shadow:0 0 15px rgba(0,0,0,0.5)
+         }
+         li{list-style: none;}
+         ul{padding: 0;}
+         .headerWrap {transition:0.3s}
+         .headerWrap .nav-item{font-size: 1.2em;border-bottom: 4px solid transparent;padding:0 10px;transition:0.3s}
+        .headerWrap .nav-item:hover{border-bottom: 4px solid var(--primary-color2);}
+        .headerWrap.fixed-top{box-shadow: 0 0 20px rgba(0,0,0,0.3);transition: 0.3s;}
+        
+        .visualWrap video{width: 100vw; margin-bottom: 60px;}
+
+
+        .content{background: var(--bg-color1);}
+
+        .btn.button-primary{background:var(--gradient-color);box-shadow:var(--box-shadow)}
+        .service .card{background: var(--bg-color1);border: 0 none;transition:0.3s}
+        .service .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
+        .service .card img{height: 250px;}
+
+        .portfolio{background: var(--bg-color1);}
+        .portfolio .row img{border-radius: 10px;}
+
+        .footer .icon li+li{margin-left: 20px;}
+        .footer .icon a{
+            display: block;width: 40px;height: 40px;
+            background:var(--bg-color1);text-align: center;line-height: 35px;
+            border-radius: 20px;
+        }
+        .customer .item{border-radius:5px}
+        .footer .icon a:hover{box-shadow: var(--box-shadow);}
+        .footer .icon img{width: 15px;}
+
+        @media screen and (max-width:576px){
+            .headerWrap .nav-item,.headerWrap .nav-item:hover{border-bottom: none;}
+        }
+        
+    </style>
+   </head>
+  <body>
+      <div class="headerWrap bg-light">
+          <div class="container">
+              <nav class="navbar navbar-expand-md navbar-light bg-light">
+                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavId">
+                      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">BUY</a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">Find A Dealer</a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">SERVICE</a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">Used</a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">Why Volvo</a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">More</a>
+                          </li>
+          
+                      </ul>
+          
+                  </div>
+              </nav>
+          </div>
+      </div>
+
+      <div class="visualWrap">
+                  <div class="video">
+                    <video src="images/mainvideo.MP4" autoplay muted loop></video>
+                 </div>
+      </div>
+
+      <div class="content">
+          <div class="container py-5 px-5 px-md-0">
+              <div class="row">
+                <div class="col-md-6 order-md-1 order-2">
+                    <img src="images/content_img.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 order-md-2 order-1 mb-5 mb-md-0 align-self-center">
+                    <h2>The new Volvo XC60</h2>
+                    <p class="mb-5">역동적인 느낌의 중형 SUV로 디자인 디테일이 새로워지고 <br> SKT 인포테인먼트 서비스가 탑재되어 더 스마트해졌습니다.</p>
+                    <a href="#!" class="btn button-primary text-white d-block d-md-inline px-5">더 알아보기</a>
+                </div>
+
+              </div>
+          </div>
+      </div>
+
+    
+
+      <div class="service">
+          <div class="container py-5 px-5 px-md-0">
+              <h2 class="text-center mb-5">Recharge Model</h2>
+              <div class="row">
+                  <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                      <div class="card">
+                          <img src="images/card_img01.png" alt="" class="img-fluid m-3">
+                          <div class="card-body">
+                              <h4 class="card-title">XC90 Recharge <br> 플러그인 하이브리드</h4>
+                              <p class="card-txt">진정한 스칸디나비안 플러그인 하이브리드 SUV.높은 성능으로 가족의 안전을 지키고, <br> 세심한 배려로 미래까지 보호합니다.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card">
+                        <img src="images/card_img02.png" alt="" class="img-fluid m-3">
+                        <div class="card-body">
+                            <h4 class="card-title">XC60 Recharge</h4>
+                            <p class="card-txt">세심한 디테일과 독보적인 편안함으로 다이내믹한 경험을 제공하는 더욱 스마트해진 스칸디나비안 플러그인 하이브리드 SUV입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="card">
+                        <img src="images/card_img03.png" alt="" class="img-fluid m-3">
+                        <div class="card-body">
+                            <h4 class="card-title">S90 Recharge</h4>
+                            <p class="card-txt">고급스러운 품위가 느껴지는 스칸디나비안 플러그인 하이브리드 세단입니다. 세심한 디테일을 통해 느껴지는 럭셔리함을 만끽하십시오.</p>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+          </div>
+      </div>
+
+      
+ 
+     
+
+      <div class="footer bg-light">
+          <div class="container py-5">
+              <div class="row">
+                  <div class="col-md-6 text-center text-md-left mb-5" >
+                      <img src="assets/logo.svg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-md-6 mb-5 mb-md-0">
+                      <ul class="icon d-flex justify-content-center justify-content-md-end">
+                          <li><a href="#!"><img src="assets/facebook.svg" alt=""></a></li>
+                          <li><a href="#!"><img src="assets/twitter.svg" alt=""></a></li>
+                          <li><a href="#!"><img src="assets/instagram.svg" alt=""></a></li>
+                          <li><a href="#!"><img src="assets/linkedin.svg" alt=""></a></li>
+                          <li><a href="#!"><img src="assets/youtube.svg" alt=""></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="text-center mb-5 pt-3" style="border-top: 1px solid #ccc;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, asperiores!
+              </div>
+          </div>
+      </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        $(window).scroll(function(){
+            let scrollY = $(window).scrollTop();
+            if(scrollY > 200){
+                $(".headerWrap").addClass("fixed-top")
+            }else{
+                $(".headerWrap").removeClass("fixed-top")
+            }
+        });
+        
+        // isotope
+        const btns = $(".portfolio .btn-group .btn");
+        btns.click(function(){
+            let i = $(this).index()
+            btns.removeClass("active");
+            $(this).addClass("active");
+
+            let selector = $(this).attr("data-filter");
+            console.log(selector)
+            $(".portfolio .row").isotope({
+                filter:selector
+            })
+        })
+        // isotope load
+        window.onload = function(){
+            $(".portfolio .btn-group #btn1").trigger("click");
+        }
+
+        // light box - modal
+        $(".portfolio .row .popup_link").magnificPopup({type:"image"})
+
+        
+        // slider 
+        $(".customer .owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            //nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                992:{
+                    items:4
+                }
+            }
+        })
+    </script>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+  </body>
+</html>
