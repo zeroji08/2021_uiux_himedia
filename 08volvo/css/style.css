@@ -53,6 +53,19 @@ ul{padding: 0;}
 .footer .icon a:hover{box-shadow: var(--box-shadow);}
 .footer .icon img{width: 15px;}
 
+
+/* subpage (buy) */
+.subpage{
+    background: skyblue;position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.subpage.buy{
+    background-image: url(../images/buy_mainimg.png);
+    height: 550px;
+}
+
 @media screen and (max-width:576px){
     .headerWrap .nav-item,.headerWrap .nav-item:hover{border-bottom: none;}
 }
