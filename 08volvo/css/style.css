@@ -31,12 +31,17 @@ ul{padding: 0;}
 /* content02 비디오 */
 .content02 .container .video02 video{width: 32vw;}
 /* content03 비디오 */
-.content03 .container .video03 video{width: 60vw;}
+.content03 .container .video03 video{width: 60vw; margin-bottom: 50px;}
 
 /* content04 */
 .content04 .card{background: var(--bg-color1);border: 0 none;transition:0.3s}
 .content04 .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
 .content04 .card img{height: 250px;} 
+/* content05 */
+.contact05{
+    background: url(../images/content05_img.png) no-repeat center fixed;
+    background-size: cover;
+}
 
 .footer .icon li+li{margin-left: 20px;}
 .footer .icon a{
