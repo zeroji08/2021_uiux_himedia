@@ -14,31 +14,29 @@ ul{padding: 0;}
         
 .visualWrap video{width: 99vw; }
 
-
-.content{background: var(--bg-color1);}
+/* content 뒷 회색 배경 */
+.content,.content02,.content04{background: var(--bg-color1);}
 
 
 .btn.button-primary{background:var(--gradient-color);box-shadow:var(--box-shadow)}
-/* .service .card{background: var(--bg-color1);border: 0 none;transition:0.3s}
-.service .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
-.service .card img{height: 250px;} */
 
-/* .service .container .title01 {text-align: center;}
-.service .container .title01 h1{padding-top: 100px; margin-bottom: 10px;}
-.service .container .title01 p{margin-bottom: 30px; font-size: 18px; font-weight: 300;} */
-
+/* service */
 .service .container .sub{margin: 0;}
 .service .container .sub .bigtxt{font-size: 38px; font-weight: 500;}
 .service .container .sub .sub02 span{font-size: 38px; font-weight: 500;}
 .service .container .sub .subtxt{font-weight: 400; margin-top: -20px;}
-
+/* service>container subimg 비디오 */
 .service .container .subimg01 video{width: 32vw;}
 
-.content02{background: var(--bg-color1);}
+/* content02 비디오 */
 .content02 .container .video02 video{width: 32vw;}
+/* content03 비디오 */
+.content03 .container .video03 video{width: 60vw;}
 
-.content02 .container .video03 video{width: 60vw;}
-
+/* content04 */
+.content04 .card{background: var(--bg-color1);border: 0 none;transition:0.3s}
+.content04 .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
+.content04 .card img{height: 250px;} 
 
 .footer .icon li+li{margin-left: 20px;}
 .footer .icon a{
