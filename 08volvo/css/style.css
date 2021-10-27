@@ -1,0 +1,53 @@
+body{font-family: 'Noto Sans KR', sans-serif;}
+:root{
+    --primary-color1:#D7D2D4;
+    --primary-color2:#514E55;
+    --bg-color1:#efefef;
+    --gradient-color:linear-gradient(90deg,#514E55,#D7D2D4);
+    --box-shadow:0 0 15px rgba(0,0,0,0.5)}
+li{list-style: none;}
+ul{padding: 0;}
+.headerWrap {transition:0.3s}
+.headerWrap .nav-item{font-size: 1.2em;border-bottom: 4px solid transparent;padding:0 10px;transition:0.3s}
+.headerWrap .nav-item:hover{border-bottom: 4px solid var(--primary-color2);}
+.headerWrap.fixed-top{box-shadow: 0 0 20px rgba(0,0,0,0.3);transition: 0.3s;}
+        
+.visualWrap video{width: 99vw; }
+
+
+.content{background: var(--bg-color1);}
+
+
+.btn.button-primary{background:var(--gradient-color);box-shadow:var(--box-shadow)}
+/* .service .card{background: var(--bg-color1);border: 0 none;transition:0.3s}
+.service .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
+.service .card img{height: 250px;} */
+
+/* .service .container .title01 {text-align: center;}
+.service .container .title01 h1{padding-top: 100px; margin-bottom: 10px;}
+.service .container .title01 p{margin-bottom: 30px; font-size: 18px; font-weight: 300;} */
+
+.service .container .sub{margin: 0;}
+.service .container .sub .bigtxt{font-size: 38px; font-weight: 500;}
+.service .container .sub .sub02 span{font-size: 38px; font-weight: 500;}
+.service .container .sub .subtxt{font-weight: 400; margin-top: -20px;}
+
+.service .container .subimg01 video{width: 32vw;}
+
+.content02{background: var(--bg-color1);}
+.content02 .container01 .subimg02 video{width: 32vw;}
+
+
+.footer .icon li+li{margin-left: 20px;}
+.footer .icon a{
+    display: block;width: 40px;height: 40px;
+    background:var(--bg-color1);text-align: center;line-height: 35px;
+    border-radius: 20px;}
+        
+.customer .item{border-radius:5px}
+.footer .icon a:hover{box-shadow: var(--box-shadow);}
+.footer .icon img{width: 15px;}
+
+@media screen and (max-width:576px){
+    .headerWrap .nav-item,.headerWrap .nav-item:hover{border-bottom: none;}
+}

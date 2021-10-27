@@ -4,52 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>볼보volvo</title>
 
-    <style>
-        :root{
-            --primary-color1:#D7D2D4;
-            --primary-color2:#514E55;
-            --bg-color1:#efefef;
-            --gradient-color:linear-gradient(90deg,#514E55,#D7D2D4);
-            --box-shadow:0 0 15px rgba(0,0,0,0.5)
-         }
-         li{list-style: none;}
-         ul{padding: 0;}
-         .headerWrap {transition:0.3s}
-         .headerWrap .nav-item{font-size: 1.2em;border-bottom: 4px solid transparent;padding:0 10px;transition:0.3s}
-        .headerWrap .nav-item:hover{border-bottom: 4px solid var(--primary-color2);}
-        .headerWrap.fixed-top{box-shadow: 0 0 20px rgba(0,0,0,0.3);transition: 0.3s;}
-        
-        .visualWrap video{width: 100vw; margin-bottom: 60px;}
-
-
-        .content{background: var(--bg-color1);}
-
-        .btn.button-primary{background:var(--gradient-color);box-shadow:var(--box-shadow)}
-        .service .card{background: var(--bg-color1);border: 0 none;transition:0.3s}
-        .service .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
-        .service .card img{height: 250px;}
-
-        .portfolio{background: var(--bg-color1);}
-        .portfolio .row img{border-radius: 10px;}
-
-        .footer .icon li+li{margin-left: 20px;}
-        .footer .icon a{
-            display: block;width: 40px;height: 40px;
-            background:var(--bg-color1);text-align: center;line-height: 35px;
-            border-radius: 20px;
-        }
-        .customer .item{border-radius:5px}
-        .footer .icon a:hover{box-shadow: var(--box-shadow);}
-        .footer .icon img{width: 15px;}
-
-        @media screen and (max-width:576px){
-            .headerWrap .nav-item,.headerWrap .nav-item:hover{border-bottom: none;}
-        }
-        
-    </style>
    </head>
   <body>
       <div class="headerWrap bg-light">
@@ -89,8 +50,8 @@
       </div>
 
       <div class="visualWrap">
-                  <div class="video">
-                    <video src="images/mainvideo.MP4" autoplay muted loop></video>
+                  <div class="video mb-3">
+                    <video src="images/xc60-recharge-video.mp4" autoplay muted loop></video>
                  </div>
       </div>
 
@@ -102,21 +63,51 @@
                 </div>
                 <div class="col-md-6 order-md-2 order-1 mb-5 mb-md-0 align-self-center">
                     <h2>The new Volvo XC60</h2>
-                    <p class="mb-5">역동적인 느낌의 중형 SUV로 디자인 디테일이 새로워지고 <br> SKT 인포테인먼트 서비스가 탑재되어 더 스마트해졌습니다.</p>
-                    <a href="#!" class="btn button-primary text-white d-block d-md-inline px-5">더 알아보기</a>
+                    <p class="mb-4">역동적인 느낌의 중형 SUV로 디자인 디테일이 새로워지고 <br> SKT 인포테인먼트 서비스가 탑재되어 더 스마트해졌습니다.</p>
+                    <p class="mb-5 text-primary">소비자 판매가격 KRW83,700,000</p>
+                    <a href="#!" class="btn button-primary text-white d-block d-md-inline px-5 ">구매하기</a>
                 </div>
 
               </div>
           </div>
       </div>
 
-    
-
       <div class="service">
-          <div class="container py-5 px-5 px-md-0">
+          <div class="container">
+              <div class="title01">
+                <h1 class="pt-5 text-center">The smartest ever XC60</h1>
+                <p class="text-center">다이내믹 플러그인 하이브리드 중형 suv로 디자인 디테일이 새로워지고
+                SKT인포테인먼트 서비스가 탑재되어 더 스마트해졌습니다.</p>
+              </div>
+              <div class="sub">
+              <div class="sub01">
+                  <p class="bigtxt">Hybrid</p>
+                  <p class="subtxt">Plug-in</p>
+              </div>
+              <div class="sub02">
+                  <p>Up to <span>33</span>km</p>
+                  <p class="subtxt">Electric range</p>
+              </div>
+              <div class="sub03">
+                  <p class="bigtxt">AWD</p>
+                  <p class="subtxt">Drive</p>
+              </div>
+              <div class="sub04">
+                  <p class="bigtxt">SKT</p>
+                  <p class="subtxt">Built in</p>
+              </div>
+
+                <div class="subimg01">
+                    <img src="images/service_img01.png" class="img-fluid mb-4" alt="">
+                    <video src="images/xc60-recharge-gallery-2-16x9-video.mp4" autoplay muted loop></video>
+                    <img src="images/service_img03.png" class="img-fluid" alt="">
+                </div> 
+            </div>
+            
+          <!-- <div class="container py-5 px-5 px-md-0">
               <h2 class="text-center mb-5">Recharge Model</h2>
               <div class="row">
-                  <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                  <div class="col-md-4 col-lg-4 mb-5 mb-lg-0">
                       <div class="card">
                           <img src="images/card_img01.png" alt="" class="img-fluid m-3">
                           <div class="card-body">
@@ -125,7 +116,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                  <div class="col-md-4 col-lg-4 mb-5 mb-lg-0">
                     <div class="card">
                         <img src="images/card_img02.png" alt="" class="img-fluid m-3">
                         <div class="card-body">
@@ -134,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="col-md-4 col-lg-4 mb-5 mb-lg-0">
                     <div class="card">
                         <img src="images/card_img03.png" alt="" class="img-fluid m-3">
                         <div class="card-body">
@@ -145,9 +136,21 @@
                 </div>
                 
               </div>
-          </div>
-      </div>
+          </div> -->
+    
+        </div>
 
+<div class="content02">
+    <div class="container01 bg-light mt-3">
+          <div class="text-center mt-5">
+              <h2>배기가스 배출은 줄이면서, 성능은 유지하였습니다.</h2>
+              <p class=""> 전기 구동을 더하여, 미래를 생각하면서도 현재의 경험을 지속할 수 있는 플러그인 하이브리드를 만들었습니다. <br>  퓨어 모드를 사용하면 출퇴근 시, 배기가스를 배출하지 않아 지구를 지키는 데 도움을 줄 수 있습니다.</p>
+          </div>
+          <div class="subimg02">
+              <video src="images/xc60-recharge-image-with-text-1-video.mp4" autoplay muted loop></video>
+          </div> 
+   </div>
+  </div>
       
  
      
@@ -156,11 +159,11 @@
           <div class="container py-5">
               <div class="row">
                   <div class="col-md-6 text-center text-md-left mb-5" >
-                      <img src="assets/logo.svg" alt="" class="img-fluid">
+                      <img src="images/logo.png" alt="" class="img-fluid">
                   </div>
                   <div class="col-md-6 mb-5 mb-md-0">
                       <ul class="icon d-flex justify-content-center justify-content-md-end">
-                          <li><a href="#!"><img src="assets/facebook.svg" alt=""></a></li>
+                          <li><a href="#!"><img src="images/youtube.svg" alt=""></a></li>
                           <li><a href="#!"><img src="assets/twitter.svg" alt=""></a></li>
                           <li><a href="#!"><img src="assets/instagram.svg" alt=""></a></li>
                           <li><a href="#!"><img src="assets/linkedin.svg" alt=""></a></li>
