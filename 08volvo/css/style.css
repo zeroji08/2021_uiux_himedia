@@ -35,7 +35,9 @@ ul{padding: 0;}
 .service .container .subimg01 video{width: 32vw;}
 
 .content02{background: var(--bg-color1);}
-.content02 .container01 .subimg02 video{width: 32vw;}
+.content02 .container .video02 video{width: 32vw;}
+
+.content02 .container .video03 video{width: 60vw;}
 
 
 .footer .icon li+li{margin-left: 20px;}
