@@ -38,7 +38,7 @@ ul{padding: 0;}
 .content04 .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
 .content04 .card img{height: 250px;} 
 /* content05 */
-.contact05{
+.content05{
     background: url(../images/content05_img.png) no-repeat center fixed;
     background-size: cover;
 }
@@ -54,17 +54,39 @@ ul{padding: 0;}
 .footer .icon img{width: 15px;}
 
 
-/* subpage (buy) */
+
+/* subpage */
 .subpage{
-    background: skyblue;position: relative;
+    _background: skyblue;position: relative;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+/* subpage (buy) */
 .subpage.buy{
     background-image: url(../images/buy_mainimg.png);
-    height: 550px;
+    height: 700px;
 }
+.buycontent02{
+    background: url(../images/buy_content02.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+/* subpage (find) */
+.subpage.find{
+    background-image: url(../images/find_mainimg.png);
+    height: 700px;
+}
+
+.findcontent .container01 .findcon {margin: 0 auto; }
+
+.findcontent02{
+    background: url(../images/content05_img.png) no-repeat center fixed;
+    background-size: cover;
+}
+/* subpage (service) */
+
+
 
 @media screen and (max-width:576px){
     .headerWrap .nav-item,.headerWrap .nav-item:hover{border-bottom: none;}
