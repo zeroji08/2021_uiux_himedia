@@ -29,7 +29,8 @@ ul{padding: 0;}
 .service .container .subimg01 video{width: 32vw;}
 
 /* content02 */
-.content02 .container .video02 video{width: 52vw;}
+
+
 .content02 .card{background: var(--bg-color1);border: 0 none;transition:0.3s}
 .content02 .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
 .content02 .card img{height: 350px;} 
