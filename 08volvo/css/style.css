@@ -21,16 +21,10 @@ ul{padding: 0;}
 .btn.button-primary{background:var(--gradient-color);box-shadow:var(--box-shadow)}
 
 /* service */
-.service .container .sub{margin: 0;}
-.service .container .sub .bigtxt{font-size: 38px; font-weight: 500;}
-.service .container .sub .sub02 span{font-size: 38px; font-weight: 500;}
-.service .container .sub .subtxt{font-weight: 400; margin-top: -20px;}
-/* service>container subimg 비디오 */
-.service .container .subimg01 video{width: 32vw;}
+
+
 
 /* content02 */
-
-
 .content02 .card{background: var(--bg-color1);border: 0 none;transition:0.3s}
 .content02 .card:hover{box-shadow: var(--box-shadow);transform:scale(1.1)}
 .content02 .card img{height: 350px;} 
