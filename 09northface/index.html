@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노스페이스</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+
+    <script>
+        $(function(){
+            $("#fullpage").fullpage({
+                menu:"#topMenu",
+                anchors:["m1st","m2st","m3st","m4st"],
+                navigation:true,
+                navigationPosition:'fp-right',
+                navigationTooltips: ['firstSlide', 'secondSlide','thirdSlide','forthSlide'],
+                responsiveWidth: 768,
+                afterLoad:function(anchorslink,index){
+                    console.log(anchorslink+','+index)
+
+                    if(index == 1){
+                        $(".view01").addClass("on")
+                    }else{
+                        $(".view01").removeClass("on") 
+                    }
+
+                    if(index==2){
+                        $(".view02").addClass("on")
+                    }else{
+                        $(".view02").removeClass("on") 
+                    }
+
+                }
+            });
+        })
+    </script>
+
+</head>
+<body>
+    <nav id="navTop">
+        <img src="images/logo.png" alt="">
+        <ul class="clearfix" id="topMenu">
+            <li data-menuanchor="m1st"><a href="#m1st">MAIN</a></li>
+            <li data-menuanchor="m2st"><a href="#m2st">K-ECO</a></li>
+            <li data-menuanchor="m3st"><a href="#m3st">DAILY LIFE</a></li>
+            <li data-menuanchor="m4st"><a href="#m4st">menu4</a></li>
+        </ul>
+    </nav>
+    <div id="fullpage">
+        <!-- page1 -->
+        <div class="section page1" data-anchor="m1st"></div>
+        <!-- page2 -->
+        <div class="section page2" data-anchor="m2st">
+            <div class="text-center">
+                <p class="display-4 mb-4"><strong> 노스페이스 기술력에 에코를 더하다</strong></p>
+                <h3>K-에코 테크란, 아웃도어 활동에 가장 최적화된 노스페이스의 기술력에 친환경 가치를 더한 기술입니다. <br>
+                     방수, 방풍, 미세먼지 차단 기능으로 우리를 지키고, 버려진 페트병을 재활용한 원단으로 <br>
+                     지구를 지키는 기술을 통해 완전히 새로운 가치의 제품을 만듭니다.
+                </h3>
+            </div>
+
+            <div class="container view01">
+                <img src="images/page02_img.png" class="img-fluid text-center" alt="">
+            </div>
+        </div>
+        <!-- page3 -->
+        <div class="section page3" data-anchor="m3st">view3</div>
+        <!-- page4 -->
+        <div class="section page4" data-anchor="m4st">
+            <div class="slide"> Slide 1 </div>
+            <div class="slide"> Slide 2 </div>
+            <div class="slide"> Slide 3 </div>
+            <div class="slide"> Slide 4 </div>
+        </div>
+
+    </div>
+</body>
+</html>

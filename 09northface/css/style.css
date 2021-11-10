@@ -1,0 +1,45 @@
+body{font-family: 'Noto Sans KR', sans-serif;}
+.section{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+.section.page1{background-image: url(../images/bg_img01.jpg);}
+.section.page2{background: #F5F5F5;}
+.section.page3{background: green;}
+.section.page4{background: skyblue;}
+
+.section .view{width: 100%;height: 100%;position: relative;}
+
+/* 메뉴바 */
+#navTop{
+    _background:#fff;
+    position: fixed; z-index: 1;
+    width: 100%;
+    display: flex;padding-left: 20px;
+    box-sizing: border-box !important;
+}
+
+#navTop img{width: 100px; margin-right: auto;} /* logo */
+
+#topMenu li{display:block;float: left; width: 130px; height: 53px;}
+#topMenu li a{
+    display:block;
+    width: 130px;
+    padding-top: 13px;
+    color: #000;
+    text-align: center;
+}
+#topMenu li:hover,
+#topMenu li.active{
+    border-bottom: solid 4px #000; 
+    font-weight: 500;}
+
+ul{margin-bottom: 0;}
+/* page1 */
+/* page2 */
+/* page3 */
+/* page4 */
