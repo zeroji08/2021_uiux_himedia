@@ -10,7 +10,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .section.page1{background-image: url(../images/page01_bg.png);}
 .section.page2{background-image: url(../images/page02_bg.png);}
 .section.page3{background-image: url(../images/page03_bg.png);}
-.section.page4{background: skyblue;}
+.section.page4{background-image: url(../images/page04_bg.png);}
 
 .section .view{width: 100%;height: 100%;position: relative;}
 
@@ -22,6 +22,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .section .view03{transform:translateX(0);transition:0.4s;}
 .section .view03.on{transform:translateX(-100vh);}
+
 /* 메뉴바 */
 #navTop{
     background:#fff;
@@ -51,3 +52,4 @@ ul{margin-bottom: 0;}
 /* page2 */
 /* page3 */
 /* page4 */
+.section.page4 img{padding-left:500px;}
