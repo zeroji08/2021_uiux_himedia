@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
@@ -43,6 +44,12 @@
                         $(".view02").removeClass("on") 
                     }
 
+                    if(index==2){
+                        $(".view03").addClass("on")
+                    }else{
+                        $(".view03").removeClass("on") 
+                    }
+
                 }
             });
         })
@@ -54,7 +61,7 @@
         <img src="images/logo.png" alt="">
         <ul class="clearfix" id="topMenu">
             <li data-menuanchor="m1st"><a href="#m1st">CONVERSE</a></li>
-            <li data-menuanchor="m2st"><a href="#m2st">MORE</a></li>
+            <li data-menuanchor="m2st"><a href="#m2st">PORDUCT</a></li>
             <li data-menuanchor="m3st"><a href="#m3st">COLORWAY</a></li>
             <li data-menuanchor="m4st"><a href="#m4st">REVIEW</a></li>
         </ul>
@@ -70,17 +77,15 @@
         <!-- page2 -->
         <div class="section page2" data-anchor="m2st">
             <div class="container view02">
-                <img src="images/page02_01_img.png" class="text-center" alt="">
+                <img src="images/page02_img.png" class="text-center" alt="">
             </div>
         </div>
         
         <!-- page3 -->
         <div class="section page3" data-anchor="m3st">
-            <p class="display-3 mb-2"><strong>GO DAILY LIFE</strong></p>
-            <h1 class="mb-2">당신의 일상과 함께하는 에코</h1>
-            <h4>매일 다른 무드로 나를 표현하고 싶다면, <br>
-                플레이 그린 플리스 자켓이 딱이지!
-            </h4>
+            <div class="view03">
+                <img src="images/page03_img.png" alt="">
+            </div>
         </div>
         <!-- page4 -->
         <div class="section page4" data-anchor="m4st">
