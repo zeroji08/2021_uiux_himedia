@@ -9,7 +9,8 @@ li{list-style: none;}
 ul{padding: 0;}
 .headerWrap {transition:0.3s}
 .headerWrap .nav-item{font-size: 1.2em;border-bottom: 4px solid transparent;padding:0 10px;transition:0.3s}
-.headerWrap .nav-item:hover{border-bottom: 4px solid var(--primary-color2);}
+.headerWrap .nav-item:hover,.headerWrap .nav-item.active
+{border-bottom: 4px solid var(--primary-color2);}
 .headerWrap.fixed-top{box-shadow: 0 0 20px rgba(0,0,0,0.3);transition: 0.3s;}
         
 .visualWrap video{width: 99vw; }
