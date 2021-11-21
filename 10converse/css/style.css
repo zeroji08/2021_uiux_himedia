@@ -20,8 +20,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .section .view02{transform:translateX(-250vh);transition:0.4s;}
 .section .view02.on{transform:translateX(-45vh);}
 
-.section .view03{transform:translateX(0);transition:0.4s;}
-.section .view03.on{transform:translateX(-100vh);}
 
 /* 메뉴바 */
 #navTop{
